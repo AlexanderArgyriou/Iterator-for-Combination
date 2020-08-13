@@ -40,8 +40,8 @@ class CombinationIterator
             PossibleComb.clear();
         }   // Destructor
     
-        std::string next() { return PossibleComb[Position++]; }   // next
-        bool hasNext() { return PossibleComb.size() != Position; }  // hasNext
+        inline std::string next() noexcept { return PossibleComb[Position++]; }   // next
+        inline bool hasNext() const noexcept { return PossibleComb.size() != Position; }  // hasNext
 };
 
 /**
