@@ -11,7 +11,7 @@ class CombinationIterator
         {
             if( Index == L )
             {
-                PossibleComb.push_back( std::move( std::string(Comb) ) );
+                PossibleComb.push_back( Comb );
                 return;  
             }   // if
             
